@@ -14,3 +14,25 @@ var myTwitter = new Twitter({
 var fs = require('fs');
 
 var command = process.argv[2];
+
+var inputArray = [];
+
+fs.appendFile(command, "", function(err) {
+
+  // If an error was experienced we say it.
+  
+  if (err) {
+    console.log(err);
+  }
+
+  // If no error is experienced, we'll log the phrase "Content Added" to our node console.
+  else {
+    console.log("Content Added!");
+  }
+
+});
+
+
+function insertHere() {
+
+}
